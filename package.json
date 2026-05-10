@@ -7,6 +7,17 @@
 		"dev": "nodemon server.js",
 		"start": "node server.js"
 	},
+	"dependencies": {
+		"chalk": "^5.6.2",
+		"cors": "^2.8.6",
+		"dotenv": "^17.4.2",
+		"express": "^5.2.1",
+		"express-validator": "^7.3.2",
+		"mysql2": "^3.22.3"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.14"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/code-kasha/school_management_api.git"
@@ -16,10 +27,11 @@
 		"api",
 		"nodejs",
 		"express",
-		"mysql"
+		"mysql",
+		"MIT"
 	],
 	"author": "Akash Damle <code-kasha>",
-	"license": "ISC",
+	"license": "MIT",
 	"type": "module",
 	"bugs": {
 		"url": "https://github.com/code-kasha/school_management_api/issues"
