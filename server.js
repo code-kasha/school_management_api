@@ -3,6 +3,8 @@ import cors from "cors"
 import dotenv from "dotenv"
 import chalk from "chalk"
 
+import schoolRoutes from "./routes/schoolRoutes.js"
+
 dotenv.config({ quiet: true })
 
 const app = express()
@@ -16,9 +18,10 @@ app.get("/", (request, response) => {
 		message: "School Management API is Running",
 		method: request.method,
 		url: request.url,
-		headers: request.headers,
 	})
 })
+
+app.use("/api", schoolRoutes)
 
 const PORT = process.env.PORT
 const ENVIRONMENT = process.env.ENVIRONMENT
