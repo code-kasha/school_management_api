@@ -1,6 +1,6 @@
 # School Management API
 
-![CI](https://github.com/USERNAME/REPO/actions/workflows/nodejs.yml/badge.svg)
+![CI](https://github.com/code-kasha/school_management_api/actions/workflows/nodejs.yml/badge.svg)
 
 A RESTful API built using Node.js, Express.js, and MySQL for managing school data.
 
