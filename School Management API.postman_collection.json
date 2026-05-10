@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "8466475d-391f-4801-8372-ece985fa3874",
+		"name": "School Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40285552"
+	},
+	"item": [
+		{
+			"name": "Add School",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Purple Cloud Academy\",\r\n  \"address\": \"Ahmedabad\",\r\n  \"latitude\": 24.0760,\r\n  \"longitude\": 68.8777\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/addSchool",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["api", "addSchool"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Schools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/listSchools?latitude=24.0760&longitude=68.8777",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "5000",
+					"path": ["api", "listSchools"],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "24.0760"
+						},
+						{
+							"key": "longitude",
+							"value": "68.8777"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

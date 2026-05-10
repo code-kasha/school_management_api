@@ -34,8 +34,8 @@ export async function addSchool(request, response) {
 
 export async function listSchools(request, response) {
 	try {
-		const userLatitude = parseFloat(request.body.latitude)
-		const userLongitude = parseFloat(request.body.longitude)
+		const userLatitude = parseFloat(request.query.latitude)
+		const userLongitude = parseFloat(request.query.longitude)
 
 		if (isNaN(userLatitude) || isNaN(userLongitude)) {
 			return response.status(400).json({
