@@ -36,11 +36,6 @@ jobs:
         run: |
           echo "PORT=5000" >> .env
           echo "ENVIRONMENT=development" >> .env
-          echo "DB_HOST=tramway.proxy.rlwy.net" >> .env
-          echo "DB_NAME=railway" >> .env
-          echo "DB_PORT=49971" >> .env
-          echo "DB_USER=root" >> .env
-          echo "DB_PASS=rmlINAXBLkUowHulRaIcEySrwSaMJNJp" >> .env
 
       - name: Run Tests
         run: npm test
