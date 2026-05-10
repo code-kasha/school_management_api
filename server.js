@@ -10,7 +10,9 @@ app.listen(PORT, () => {
 		case "production":
 			console.log(chalk.green.bold("Production Server Running"))
 			console.log(
-				chalk.blue(`Live URL: https://school_management_api.onrender.com`),
+				chalk.blue(
+					`Live URL: https://school-management-api-cyrd.onrender.com/`,
+				),
 			)
 			break
 

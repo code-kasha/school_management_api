@@ -2,6 +2,8 @@
 
 ![CI](https://github.com/code-kasha/school_management_api/actions/workflows/nodejs.yml/badge.svg)
 
+# Live URL: https://school-management-api-cyrd.onrender.com
+
 A RESTful API built using Node.js, Express.js, and MySQL for managing school data.
 
 The API allows users to:
